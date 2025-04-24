@@ -1,19 +1,34 @@
 <template>
     <div>
         <h1>Blog Post</h1>
+
+        <ul>
+            <li v-for="item in list" :key="item.id">
+                {{ item.title }}
+            </li>
+        </ul>
     </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
 
-export default defineComponent({
-    setup() {
-
-
-        return {}
-    }
-})
+const list = ref([
+    {
+        id: 1,
+        title: 'Brasil',
+        description: 'Carnaval, parintis'
+    },
+    {
+        id: 2,
+        title: 'Argentina',
+        description: 'Chalten'
+    },
+    {
+        id: 3,
+        title: 'Japon',
+        description: 'Tokio'
+    },
+]);
 </script>
 
 <style scoped></style>
