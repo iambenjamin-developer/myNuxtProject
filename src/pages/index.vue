@@ -1,7 +1,7 @@
 import { HelloWorld } from '../.nuxt/components';
 <template>
     <div>
-        <HelloWorld />
+        <h1>Home</h1>
     </div>
 
 </template>
