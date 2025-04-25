@@ -5,6 +5,7 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({ layout: 'blog' });
 // ✅ Correcto: useRoute() dentro de <script setup>
 const route = useRoute()
 const id = route.params.id  // Accede al parámetro dinámico
